@@ -7,6 +7,29 @@
     <title>Calculate</title>
 </head>
 <body>
+    <script>
+
+        let one = +prompt('Введите первое число');
+        let two = +prompt('Введите второе число');
+        let sign = prompt('Введите символ математической операции: \r\n\ + \r\n - \r\n * \r\n / \r\n');
     
+        switch (sign) {
+            case '+': 
+                alert(one + two);
+                break;
+            case '-':
+                alert(one - two);
+                break;
+            case '*':
+                alert(one * two);
+                break;
+            case '/':
+                alert(one / two);
+                break;
+            default:
+                alert('Введено некорректное значение');
+        }
+    
+        </script>
 </body>
 </html>
