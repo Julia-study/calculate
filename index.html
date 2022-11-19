@@ -27,8 +27,16 @@
                 case '*':
                     alert(one * two);
                     break;
-                case '/':
-                    alert(one / two);
+                case '/': {
+                    if (two == 0) {
+                        alert('Деление на 0')
+                        break;
+                    }
+                    else {
+                        alert(one / two);
+                        break;}
+                }
+                    
                     break;
                 default:
                     alert('Введено некорректное значение');
